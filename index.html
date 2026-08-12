@@ -193,14 +193,16 @@
     <aside class="lg:col-span-4 xl:col-span-4 p-6 lg:p-10 lg:sticky lg:top-0 lg:h-screen flex flex-col justify-between pt-20 lg:pt-10 border-r border-minimal-border bg-white">
       
       <div class="space-y-6">
-        <!-- Logo Badge -->
-        <div class="hidden lg:flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center font-mono text-sm shadow-sm">
-            TSC
-          </div>
-          <div>
-            <h2 class="font-bold text-xs tracking-wider uppercase text-slate-900">TAYYABA SAEED CHAUHAN</h2>
-            <p class="text-[10px] text-slate-400 font-mono tracking-widest uppercase">FINTECH & DATA ANALYTICS</p>
+        <!-- Logo & Header Badge -->
+        <div class="hidden lg:flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center font-mono text-sm shadow-sm">
+              TSC
+            </div>
+            <div>
+              <h2 class="font-bold text-xs tracking-wider uppercase text-slate-900">TAYYABA SAEED CHAUHAN</h2>
+              <p class="text-[10px] text-slate-400 font-mono tracking-widest uppercase">FINTECH & DATA ANALYTICS</p>
+            </div>
           </div>
         </div>
 
@@ -221,46 +223,58 @@
           </p>
         </div>
 
-        <!-- Quick Stats Grid -->
-        <div class="grid grid-cols-2 gap-2 pt-2 font-mono">
-          <div class="p-3 rounded-lg bg-slate-50 border border-minimal-border">
+        <!-- Quick Stats Grid (Bento Style) -->
+        <div class="grid grid-cols-2 gap-2 pt-1 font-mono">
+          <div class="p-3 rounded-xl bg-slate-50 border border-minimal-border hover:border-slate-300 transition">
             <span class="text-[10px] text-slate-400 block uppercase">Datasets Cleaned</span>
-            <span class="text-lg font-bold text-slate-900">1,200+ Rows</span>
+            <span class="text-base font-bold text-slate-900">1,200+ Rows</span>
           </div>
-          <div class="p-3 rounded-lg bg-slate-50 border border-minimal-border">
-            <span class="text-[10px] text-slate-400 block uppercase">Workflow Time Saved</span>
-            <span class="text-lg font-bold text-blue-600">~160 Mins</span>
+          <div class="p-3 rounded-xl bg-slate-50 border border-minimal-border hover:border-slate-300 transition">
+            <span class="text-[10px] text-slate-400 block uppercase">Workflow Saved</span>
+            <span class="text-base font-bold text-blue-600">~160 Mins</span>
           </div>
         </div>
 
         <!-- Desktop Navigation Bar -->
-        <nav class="hidden lg:block space-y-1 font-mono text-xs pt-4 border-t border-minimal-border">
-          <a href="#about" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>01. About</span> <span>&rarr;</span></a>
-          <a href="#competencies" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>02. Core Proficiency</span> <span>&rarr;</span></a>
-          <a href="#skills" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>03. Tech Stack</span> <span>&rarr;</span></a>
-          <a href="#projects" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>04. Projects</span> <span>&rarr;</span></a>
-          <a href="#analytics-lab" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>05. Data Foundry</span> <span>&rarr;</span></a>
-          <a href="#experience" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>06. Experience</span> <span>&rarr;</span></a>
-          <a href="#certifications" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>07. Credentials</span> <span>&rarr;</span></a>
-          <a href="#contact" class="flex items-center justify-between py-1.5 px-3 rounded hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>08. Contact</span> <span>&rarr;</span></a>
+        <nav class="hidden lg:block space-y-1 font-mono text-xs pt-2 border-t border-minimal-border">
+          <a href="#about" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>01. About</span> <span>&rarr;</span></a>
+          <a href="#competencies" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>02. Core Proficiency</span> <span>&rarr;</span></a>
+          <a href="#skills" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>03. Tech Stack</span> <span>&rarr;</span></a>
+          <a href="#projects" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>04. Projects</span> <span>&rarr;</span></a>
+          <a href="#analytics-lab" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>05. Data Foundry</span> <span>&rarr;</span></a>
+          <a href="#experience" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>06. Experience</span> <span>&rarr;</span></a>
+          <a href="#certifications" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>07. Credentials</span> <span>&rarr;</span></a>
+          <a href="#contact" class="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-blue-600 transition"><span>08. Contact</span> <span>&rarr;</span></a>
         </nav>
       </div>
 
-      <!-- Action Buttons -->
-      <div class="pt-6 border-t border-minimal-border space-y-3">
-        <button onclick="toggleResumeModal(true)" class="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs tracking-wider uppercase font-mono transition flex items-center justify-center gap-2 shadow-sm">
+      <!-- Action Buttons & Working Social Links -->
+      <div class="pt-4 border-t border-minimal-border space-y-3">
+        <button onclick="toggleResumeModal(true)" class="w-full py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs tracking-wider uppercase font-mono transition flex items-center justify-center gap-2 shadow-sm">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
           Interactive Resume
         </button>
-        <div class="flex items-center justify-between px-1 text-xs text-slate-400 font-mono">
-          <span>Punjab, Pakistan</span>
-          <a href="https://github.com/TayyabaSaeedChauhan" target="_blank" class="hover:text-slate-900 flex items-center gap-1">GitHub ↗</a>
+
+        <!-- Social Action Badge -->
+        <div class="p-2.5 rounded-xl bg-slate-50 border border-minimal-border flex items-center justify-between text-xs font-mono">
+          <span class="text-[11px] text-slate-400">CONNECT:</span>
+          <div class="flex items-center gap-3">
+            <a href="https://github.com/TayyabaSaeedChauhan" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-blue-600 transition font-semibold flex items-center gap-1">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <span class="text-slate-300">|</span>
+            <a href="https://www.linkedin.com/in/tayyaba-saeed-chauhan-772922339/" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-blue-600 transition font-semibold flex items-center gap-1">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </aside>
 
     <!-- RIGHT CONTENT STREAM (SCROLLABLE) -->
-    <main class="lg:col-span-8 xl:col-span-8 p-6 lg:p-12 space-y-20">
+    <main class="lg:col-span-8 xl:col-span-8 p-6 lg:p-12 space-y-16">
 
       <!-- ================= 01. ABOUT ================= -->
       <section id="about" class="space-y-4">
@@ -288,7 +302,7 @@
           <span>Core Proficiency</span>
         </div>
         
-        <div class="bg-white border border-minimal-border rounded-xl p-6 soft-shadow space-y-6">
+        <div class="bg-white border border-minimal-border rounded-2xl p-6 soft-shadow space-y-6">
           <p class="text-xs text-slate-500 font-mono">// SELECT CATEGORY TO FILTER PILLARS</p>
           
           <!-- Category Filter Tabs -->
@@ -300,43 +314,43 @@
 
           <!-- Dynamic Cards Grid -->
           <div class="grid sm:grid-cols-2 gap-3" id="pillars-container">
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">01. DATA ANALYTICS</span>
               <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">02. BUSINESS INTELLIGENCE</span>
               <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">03. FINANCIAL RATIO ANALYTICS</span>
               <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">04. DASHBOARD & SCHEMA DESIGN</span>
               <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="tech">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="tech">
               <span class="text-xs font-mono font-bold text-slate-800">05. POSTGRESQL & SQL WRANGLING</span>
               <span class="w-2 h-2 rounded-full bg-amber-500"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="tech">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="tech">
               <span class="text-xs font-mono font-bold text-slate-800">06. PYTHON (PANDAS & SEABORN)</span>
               <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">07. EXPLORATORY DATA ANALYSIS (EDA)</span>
               <span class="w-2 h-2 rounded-full bg-slate-900"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">08. POWER BI & DAX</span>
               <span class="w-2 h-2 rounded-full bg-amber-500"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="data">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="data">
               <span class="text-xs font-mono font-bold text-slate-800">09. TABLEAU VISUALIZATION</span>
               <span class="w-2 h-2 rounded-full bg-blue-500"></span>
             </div>
-            <div class="pillar-card p-3.5 rounded-lg border border-minimal-border bg-slate-50/50 flex items-center justify-between" data-type="tech">
+            <div class="pillar-card p-3.5 rounded-xl border border-minimal-border bg-slate-50/50 flex items-center justify-between hover:bg-slate-50 transition" data-type="tech">
               <span class="text-xs font-mono font-bold text-slate-800">10. PROMPT ENGINEERING & AGENTIC AI</span>
               <span class="w-2 h-2 rounded-full bg-purple-600"></span>
             </div>
@@ -354,22 +368,22 @@
 
         <div class="grid sm:grid-cols-3 gap-4">
           <!-- Stack 1 -->
-          <div class="p-5 rounded-xl bg-white border border-minimal-border soft-shadow space-y-3">
+          <div class="p-5 rounded-2xl bg-white border border-minimal-border soft-shadow space-y-3 hover:border-slate-300 transition">
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-semibold">PYTHON STACK</span>
             <h3 class="font-bold text-slate-900 text-sm">Data & Modeling</h3>
-            <p class="text-xs text-slate-500">Pandas, NumPy, Matplotlib, Seaborn for automated receipt systems, outlier detection (IQR & Z-score), and EDA.</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Pandas, NumPy, Matplotlib, Seaborn for automated receipt systems, outlier detection (IQR & Z-score), and EDA.</p>
           </div>
           <!-- Stack 2 -->
-          <div class="p-5 rounded-xl bg-white border border-minimal-border soft-shadow space-y-3">
+          <div class="p-5 rounded-2xl bg-white border border-minimal-border soft-shadow space-y-3 hover:border-slate-300 transition">
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-semibold">DATABASES</span>
             <h3 class="font-bold text-slate-900 text-sm">PostgreSQL Management</h3>
-            <p class="text-xs text-slate-500">PostgreSQL table schemas (DL3), relational querying, WHERE filters, GROUP BY, and HAVING aggregate analyses.</p>
+            <p class="text-xs text-slate-500 leading-relaxed">PostgreSQL table schemas (DL3), relational querying, WHERE filters, GROUP BY, and HAVING aggregate analyses.</p>
           </div>
           <!-- Stack 3 -->
-          <div class="p-5 rounded-xl bg-white border border-minimal-border soft-shadow space-y-3">
+          <div class="p-5 rounded-2xl bg-white border border-minimal-border soft-shadow space-y-3 hover:border-slate-300 transition">
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 font-semibold">AI & BI TOOLKIT</span>
             <h3 class="font-bold text-slate-900 text-sm">Power BI, Tableau & AI</h3>
-            <p class="text-xs text-slate-500">Claude & Custom GPT prompt engineering, NotebookLM workflows, Power BI DAX modeling, and interactive dashboards.</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Claude & Custom GPT prompt engineering, NotebookLM workflows, Power BI DAX modeling, and interactive dashboards.</p>
           </div>
         </div>
       </section>
@@ -385,7 +399,7 @@
         <div class="grid gap-6">
 
           <!-- Project 1: Tesla 10-K Prompt Engineering (FlyRank AI) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-purple-600 uppercase tracking-wide">FlyRank AI Internship</span>
@@ -396,7 +410,7 @@
             <p class="text-xs text-slate-600 leading-relaxed">
               Benchmarked LLM performance (Claude vs. ChatGPT) on executing complex financial statement analyses on Tesla’s 2025 Form 10-K. Engineered a step-decomposition prompting framework requiring persona assignment, few-shot framing, tool execution, and explicit output constraints to compute Horizontal, Vertical, and DuPont Ratio metrics.
             </p>
-            <div class="bg-slate-50 p-3 rounded-lg border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
+            <div class="bg-slate-50 p-3 rounded-xl border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
               <span class="text-slate-900 font-bold">// Key Findings & Outcome:</span>
               <p>• Claude successfully executed step-decomposition and tool use to generate a full 10-K analysis with formatted financial tables.</p>
               <p>• Created a reusable prompt architecture for automated financial ratio decomposition.</p>
@@ -410,7 +424,7 @@
           </div>
 
           <!-- Project 2: E-Commerce Database Management (DECODE Lab) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-amber-600 uppercase tracking-wide">DECODE Lab Internship</span>
@@ -421,7 +435,7 @@
             <p class="text-xs text-slate-600 leading-relaxed">
               Designed and structured the <code class="bg-slate-100 px-1 rounded">DL3</code> relational table schema to organize e-commerce transactions, customer IDs, unit pricing, shipping destinations, and referral pathways. Authored complex SQL scripts utilizing <code class="bg-slate-100 px-1 rounded">WHERE</code> filters, multi-column sorting, and <code class="bg-slate-100 px-1 rounded">HAVING</code> aggregate thresholds to isolate high-value revenue drivers.
             </p>
-            <div class="bg-slate-50 p-3 rounded-lg border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
+            <div class="bg-slate-50 p-3 rounded-xl border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
               <span class="text-slate-900 font-bold">// SQL Query Scope:</span>
               <p>• Aggregated order volumes, average sales pricing, and customer spend thresholds.</p>
               <p>• Built scalable queries for tracking order fulfillment, tracking numbers, and referral attribution.</p>
@@ -435,7 +449,7 @@
           </div>
 
           <!-- Project 3: Source-Grounded Study Notes Pipeline (FlyRank AI) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-blue-600 uppercase tracking-wide">FlyRank AI Internship</span>
@@ -446,7 +460,7 @@
             <p class="text-xs text-slate-600 leading-relaxed">
               Architected a 3-stage automated study pipeline (<code class="bg-slate-100 px-1 rounded">Gather/Extract → Draft Study Guide → Active Recall Quiz</code>) using NotebookLM and Claude/Custom GPT. Tested across 5 technical domains including Financial Ratios, PostgreSQL, Prompting Methodologies, Economics, and No-Code Workflows.
             </p>
-            <div class="bg-slate-50 p-3 rounded-lg border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
+            <div class="bg-slate-50 p-3 rounded-xl border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
               <span class="text-slate-900 font-bold">// Efficiency Gains:</span>
               <p>• Saved ~160 minutes (~2.6 hours) of manual synthesis across 5 domain test runs.</p>
               <p>• Implemented verification checkpoints for mathematical formula precision and quiz alignment.</p>
@@ -460,7 +474,7 @@
           </div>
 
           <!-- Project 4: E-Commerce Exploratory Data Analysis (DECODE Lab) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-emerald-600 uppercase tracking-wide">DECODE Lab Internship</span>
@@ -471,7 +485,7 @@
             <p class="text-xs text-slate-600 leading-relaxed">
               Executed exploratory data analysis on a 1,200-row e-commerce dataset using Python (<code class="bg-slate-100 px-1 rounded">pandas</code>, <code class="bg-slate-100 px-1 rounded">numpy</code>, <code class="bg-slate-100 px-1 rounded">matplotlib</code>, <code class="bg-slate-100 px-1 rounded">seaborn</code>). Profiling revealed key missing value distributions (such as 309 missing <code class="bg-slate-100 px-1 rounded">CouponCode</code> entries) and enabled full statistical characterization.
             </p>
-            <div class="bg-slate-50 p-3 rounded-lg border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
+            <div class="bg-slate-50 p-3 rounded-xl border border-minimal-border space-y-1 text-xs text-slate-500 font-mono">
               <span class="text-slate-900 font-bold">// Statistical Techniques & Outliers:</span>
               <p>• Applied IQR (interquartile range) and Z-score methods (<code class="bg-slate-100 px-1 text-slate-800">|Z| &gt; 3</code>) to isolate extreme values.</p>
               <p>• Generated correlation heatmaps and standard deviation bounds across financial transactions.</p>
@@ -485,7 +499,7 @@
           </div>
 
           <!-- Project 5: Automated Receipt & VIP Engine (Python) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-sky-600 uppercase tracking-wide">Python Scripting</span>
@@ -505,7 +519,7 @@
           </div>
 
           <!-- Project 6: Portfolio Architecture & Proof Statement (FlyRank AI) -->
-          <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-minimal-border soft-shadow hover:border-slate-300 transition space-y-4">
             <div class="flex justify-between items-center border-b border-minimal-border pb-3">
               <div>
                 <span class="text-[10px] font-mono font-bold text-slate-700 uppercase tracking-wide">FlyRank AI Internship</span>
@@ -534,10 +548,10 @@
           <span>Interactive Data Foundry</span>
         </div>
 
-        <div class="rounded-xl bg-slate-900 text-white p-6 soft-shadow space-y-4 font-mono text-xs">
+        <div class="rounded-2xl bg-slate-900 text-white p-6 soft-shadow space-y-4 font-mono text-xs border border-slate-800">
           <div class="flex items-center justify-between border-b border-slate-800 pb-3">
             <span class="text-slate-400">// retail_eda_outlier_pipeline.py</span>
-            <button onclick="runLabSimulation()" class="px-3 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white font-bold text-[11px] transition">
+            <button onclick="runLabSimulation()" class="px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-[11px] transition shadow-sm">
               Run Script
             </button>
           </div>
@@ -548,7 +562,7 @@
           <p>df[<span class="text-emerald-400">'z_score'</span>] = (df[<span class="text-emerald-400">'Spend'</span>] - df[<span class="text-emerald-400">'Spend'</span>].mean()) / df[<span class="text-emerald-400">'Spend'</span>].std()</p>
           <p>outliers = df[np.abs(df[<span class="text-emerald-400">'z_score'</span>]) &gt; <span class="text-amber-400">3.0</span>]</p>
 
-          <div class="mt-4 p-4 rounded bg-slate-800/80 border border-slate-700 space-y-3 font-sans">
+          <div class="mt-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700 space-y-3 font-sans">
             <div class="flex items-center justify-between text-[11px]">
               <span class="text-slate-400">STATUS: <strong id="lab-status" class="text-blue-400">READY</strong></span>
               <span class="text-slate-400 font-mono">1,200 Rows Loaded</span>
@@ -558,15 +572,15 @@
             <div class="space-y-2">
               <div>
                 <div class="flex justify-between text-[10px] text-slate-300 mb-1"><span>E-Commerce Orders (PostgreSQL Schema)</span><span>1,200 Rows</span></div>
-                <div class="w-full bg-slate-700 h-1.5 rounded"><div id="bar-1" class="bg-blue-500 h-1.5 rounded transition-all duration-500" style="width: 100%;"></div></div>
+                <div class="w-full bg-slate-700 h-1.5 rounded-full"><div id="bar-1" class="bg-blue-500 h-1.5 rounded-full transition-all duration-500" style="width: 100%;"></div></div>
               </div>
               <div>
                 <div class="flex justify-between text-[10px] text-slate-300 mb-1"><span>Missing Coupon Code Records</span><span>309 Filtered</span></div>
-                <div class="w-full bg-slate-700 h-1.5 rounded"><div id="bar-2" class="bg-amber-400 h-1.5 rounded transition-all duration-500" style="width: 25.7%;"></div></div>
+                <div class="w-full bg-slate-700 h-1.5 rounded-full"><div id="bar-2" class="bg-amber-400 h-1.5 rounded-full transition-all duration-500" style="width: 25.7%;"></div></div>
               </div>
               <div>
                 <div class="flex justify-between text-[10px] text-slate-300 mb-1"><span>Outliers Isolated (|Z| &gt; 3)</span><span>Cleaned</span></div>
-                <div class="w-full bg-slate-700 h-1.5 rounded"><div id="bar-3" class="bg-emerald-400 h-1.5 rounded transition-all duration-500" style="width: 96%;"></div></div>
+                <div class="w-full bg-slate-700 h-1.5 rounded-full"><div id="bar-3" class="bg-emerald-400 h-1.5 rounded-full transition-all duration-500" style="width: 96%;"></div></div>
               </div>
             </div>
             <p id="lab-msg" class="text-[10px] text-slate-400 italic font-mono">Click 'Run Script' to execute EDA & outlier filtering pipeline...</p>
@@ -612,8 +626,8 @@
         </div>
 
         <!-- Academic Card -->
-        <div id="education" class="pt-4">
-          <div class="p-5 rounded-xl bg-white border border-minimal-border soft-shadow space-y-2">
+        <div id="education" class="pt-2">
+          <div class="p-5 rounded-2xl bg-white border border-minimal-border soft-shadow space-y-2 hover:border-slate-300 transition">
             <span class="text-[10px] font-mono font-bold text-blue-600 uppercase">ACADEMICS</span>
             <h3 class="text-base font-bold text-slate-900">Bachelor of Science in Financial Technology</h3>
             <p class="text-xs text-slate-500 font-mono">Air University • Expected 2029 (Current GPA: 3.9 / 4.0)</p>
@@ -640,7 +654,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">DELOITTE</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Data Analytics Simulation</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Forensic technology, Tableau visual dashboards, and corporate analytics.</p>
-              <a href="https://www.theforage.com/simulations/deloitte-au/data-analytics-s5zy/completed" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://www.theforage.com/simulations/deloitte-au/data-analytics-s5zy/completed" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -652,7 +666,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">MACQUARIE UNIVERSITY</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Excel Fundamentals for Data Analysis</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Data cleaning, conditional formatting, and analytical logic.</p>
-              <a href="https://coursera.org/share/71f13f55aa18648c60943fecfd4e26a1" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/71f13f55aa18648c60943fecfd4e26a1" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -664,7 +678,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">MACQUARIE UNIVERSITY</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Excel Skills for Business</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Spreadsheet management, formulas, and business data navigation.</p>
-              <a href="https://coursera.org/share/db392bb024973294233e523fd8a4086c" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/db392bb024973294233e523fd8a4086c" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -676,7 +690,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">COURSERA</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Power BI Visualization</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Creation of interactive business dashboards and visual reports.</p>
-              <a href="https://coursera.org/share/39e2898c739a6c57cc6529788207ff2a" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/39e2898c739a6c57cc6529788207ff2a" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -688,7 +702,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">DEEPLEARNING.AI</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">AI For Everyone</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Understanding AI capabilities and machine learning strategy.</p>
-              <a href="https://coursera.org/share/961deefe528822cf51e358093195b20c" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/961deefe528822cf51e358093195b20c" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -700,7 +714,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">GOOGLE</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Data-Driven Decisions</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Structured problem-solving and analytical frameworks.</p>
-              <a href="https://coursera.org/share/ccd59c37ac8252397596a371fdd564d3" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/ccd59c37ac8252397596a371fdd564d3" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -712,7 +726,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">GOOGLE</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Foundations: Data Everywhere</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Overview of the data analysis lifecycle and tools.</p>
-              <a href="https://coursera.org/share/45559c5fabc843e3e2e8d835b2e245ef" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/45559c5fabc843e3e2e8d835b2e245ef" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -724,7 +738,7 @@
               <span class="text-[10px] font-mono text-blue-600 font-bold uppercase">GOOGLE</span>
               <h3 class="text-sm font-bold text-slate-900 mt-1">Dirty to Clean Data</h3>
               <p class="text-xs text-slate-500 mt-1 mb-3 flex-grow">Hands-on data cleaning, verification, and SQL transformation.</p>
-              <a href="https://coursera.org/share/5fa3f194bab15834ed694377e61cf8f9" target="_blank" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
+              <a href="https://coursera.org/share/5fa3f194bab15834ed694377e61cf8f9" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-600 font-bold hover:underline">Verify Credential &rarr;</a>
             </div>
           </article>
 
@@ -736,24 +750,53 @@
         <div class="flex items-center gap-2 text-blue-600 font-mono text-xs font-semibold tracking-widest uppercase">
           <span>08</span>
           <span class="h-px w-8 bg-blue-600"></span>
-          <span>Contact</span>
+          <span>Contact & Socials</span>
         </div>
 
-        <div class="p-6 rounded-xl bg-white border border-minimal-border soft-shadow space-y-4">
-          <h3 class="text-lg font-bold text-slate-900">Initiate Collaboration</h3>
-          <p class="text-xs text-slate-500">Have a project, analytics role, or question? Send a message directly.</p>
-          
-          <form onsubmit="event.preventDefault(); alert('Message Sent!');" class="space-y-3 font-mono text-xs">
-            <div class="grid sm:grid-cols-2 gap-3">
-              <input type="text" placeholder="NAME" class="w-full p-2.5 rounded bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
-              <input type="email" placeholder="EMAIL" class="w-full p-2.5 rounded bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
+        <div class="grid sm:grid-cols-12 gap-4">
+          <!-- Form Area -->
+          <div class="sm:col-span-8 p-6 rounded-2xl bg-white border border-minimal-border soft-shadow space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Initiate Collaboration</h3>
+            <p class="text-xs text-slate-500">Have a project, analytics role, or question? Send a message directly.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('Message Sent!');" class="space-y-3 font-mono text-xs">
+              <div class="grid sm:grid-cols-2 gap-3">
+                <input type="text" placeholder="NAME" class="w-full p-2.5 rounded-lg bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
+                <input type="email" placeholder="EMAIL" class="w-full p-2.5 rounded-lg bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
+              </div>
+              <input type="text" placeholder="SUBJECT" class="w-full p-2.5 rounded-lg bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
+              <textarea rows="3" placeholder="MESSAGE..." class="w-full p-2.5 rounded-lg bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required></textarea>
+              <button type="submit" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold uppercase rounded-lg transition shadow-sm">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Direct Social Connections Bento Card -->
+          <div class="sm:col-span-4 p-6 rounded-2xl bg-slate-900 text-white flex flex-col justify-between space-y-6 font-mono text-xs">
+            <div class="space-y-3">
+              <span class="text-blue-400 font-bold uppercase">// DIRECT LINKS</span>
+              <p class="text-slate-400 text-[11px] leading-relaxed font-sans">Reach out on professional platforms directly for code repositories and networking.</p>
             </div>
-            <input type="text" placeholder="SUBJECT" class="w-full p-2.5 rounded bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required />
-            <textarea rows="3" placeholder="MESSAGE..." class="w-full p-2.5 rounded bg-slate-50 border border-minimal-border focus:outline-none focus:border-blue-600" required></textarea>
-            <button type="submit" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold uppercase rounded transition">
-              Send Message
-            </button>
-          </form>
+
+            <div class="space-y-2">
+              <a href="https://github.com/TayyabaSaeedChauhan" target="_blank" rel="noopener noreferrer" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition flex items-center justify-between text-white font-semibold">
+                <span class="flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </span>
+                <span>&rarr;</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/tayyaba-saeed-chauhan-772922339/" target="_blank" rel="noopener noreferrer" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition flex items-center justify-between text-white font-semibold">
+                <span class="flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  LinkedIn
+                </span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -767,7 +810,7 @@
 
   <!-- ================= RESUME MODAL ================= -->
   <div id="resume-modal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="w-full max-w-3xl max-h-[90vh] bg-white border border-minimal-border rounded-xl flex flex-col shadow-2xl overflow-hidden">
+    <div class="w-full max-w-3xl max-h-[90vh] bg-white border border-minimal-border rounded-2xl flex flex-col shadow-2xl overflow-hidden">
       
       <!-- Top Control Bar -->
       <div class="bg-slate-50 px-6 py-3 border-b border-minimal-border flex items-center justify-between font-mono text-xs">
@@ -785,10 +828,11 @@
         <div class="border-b border-minimal-border pb-4 space-y-1">
           <h1 class="text-xl font-bold text-slate-900 uppercase">TAYYABA SAEED CHAUHAN</h1>
           <p class="text-blue-600 font-mono font-bold">BS. FINANCIAL TECHNOLOGY STUDENT (3.9 / 4.0 CGPA)</p>
-          <div class="flex flex-wrap gap-3 text-slate-400 font-mono text-[10px] pt-1">
+          <div class="flex flex-wrap gap-3 text-slate-500 font-mono text-[10px] pt-1">
             <span>📍 Punjab, Pakistan</span>
             <span>✉️ tayyabasaeedchauhan@gmail.com</span>
-            <span>📞 +92 329 0072048</span>
+            <a href="https://github.com/TayyabaSaeedChauhan" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/tayyabasaeedchauhan/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">🔗 LinkedIn</a>
           </div>
         </div>
 
@@ -804,9 +848,9 @@
         <div class="space-y-1">
           <h4 class="font-bold text-blue-600 font-mono uppercase text-[11px]">// SKILLS & COMPETENCIES</h4>
           <div class="grid sm:grid-cols-3 gap-2 font-mono text-[10px] pt-1">
-            <div class="p-2 bg-slate-50 rounded border border-minimal-border"><strong>Languages & DB:</strong> Python (Pandas, NumPy, Seaborn), PostgreSQL, SQL</div>
-            <div class="p-2 bg-slate-50 rounded border border-minimal-border"><strong>Analytics & BI:</strong> Power BI, Tableau, Excel, DuPont Ratio & Financial Modeling</div>
-            <div class="p-2 bg-slate-50 rounded border border-minimal-border"><strong>AI & Automation:</strong> Prompt Engineering (Claude, ChatGPT), NotebookLM Pipelines</div>
+            <div class="p-2 bg-slate-50 rounded-lg border border-minimal-border"><strong>Languages & DB:</strong> Python (Pandas, NumPy, Seaborn), PostgreSQL, SQL</div>
+            <div class="p-2 bg-slate-50 rounded-lg border border-minimal-border"><strong>Analytics & BI:</strong> Power BI, Tableau, Excel, DuPont Ratio & Financial Modeling</div>
+            <div class="p-2 bg-slate-50 rounded-lg border border-minimal-border"><strong>AI & Automation:</strong> Prompt Engineering (Claude, ChatGPT), NotebookLM Pipelines</div>
           </div>
         </div>
 
