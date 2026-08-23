@@ -9,7 +9,7 @@ Official capstone portfolio website and project repository for the **FlyRank AI 
 ---
 
 ## 🚀 Live Preview
-Explore the live deployed portfolio: [tayyabasaeedchauhan.vercel.app](https://tayyabasaeedchauhan.vercel.app)
+Explore the live deployed portfolio: https://tayyabasaeedchauhan.vercel.app/
 
 ---
 
